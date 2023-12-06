@@ -15,8 +15,9 @@
   </head>
   <body>
     <!-- HEADER: Navbar -->
-    <header class="shadow-md h-20">
+    <header class="shadow-md h-20 fixed bg-white w-full">
       <div class="max-w-screen-xl w-11/12 mx-auto h-full flex justify-between">
+        <!-- HEADER left -->
         <div class="flex gap-8 h-full items-center">
           <a href="./" class="">
             <img src="./assets/images/logo.svg" alt="evernote logo" />
@@ -26,7 +27,7 @@
               <li>
                 <a
                   href="javascript:void(0)"
-                  class="uppercase font-semibold h-full flex items-center hover:text-green-600"
+                  class="uppercase font-semibold h-full flex items-center hover:text-main"
                   >why evernote</a
                 >
               </li>
@@ -39,12 +40,12 @@
                   alt="arrow down"
                 />
                 <div
-                  class="hidden absolute z-10 top-full left-1/2 -translate-x-1/2 w-52 max-h-96 p-4 flex-col gap-4 group-hover:flex border shadow-md overflow-y-scroll"
+                  class="hidden absolute z-10 top-full left-1/2 -translate-x-1/2 w-60 max-h-96 p-4 flex-col gap-4 group-hover:flex border shadow-md overflow-auto bg-white"
                 >
                   <a href="javascript:void(0)"
                     >sync & organize
                     <p
-                      class="font-normal text-sm normal-case first-letter:uppercase"
+                      class="font-normal text-sm normal-case first-letter:uppercase text-gray-700"
                     >
                       keep your notes handy
                     </p>
@@ -52,7 +53,7 @@
                   <a href="javascript:void(0)"
                     >search
                     <p
-                      class="font-normal text-sm normal-case first-letter:uppercase"
+                      class="font-normal text-sm normal-case first-letter:uppercase text-gray-700"
                     >
                       find exactly what you need
                     </p>
@@ -60,7 +61,7 @@
                   <a href="javascript:void(0)"
                     >home
                     <p
-                      class="font-normal text-sm normal-case first-letter:uppercase"
+                      class="font-normal text-sm normal-case first-letter:uppercase text-gray-700"
                     >
                       see your Evernote, your way
                     </p>
@@ -68,7 +69,7 @@
                   <a href="javascript:void(0)"
                     >document scanner
                     <p
-                      class="font-normal text-sm normal-case first-letter:uppercase"
+                      class="font-normal text-sm normal-case first-letter:uppercase text-gray-700"
                     >
                       go paperless with Evernote
                     </p>
@@ -76,7 +77,7 @@
                   <a href="javascript:void(0)"
                     >calendar
                     <p
-                      class="font-normal text-sm normal-case first-letter:uppercase"
+                      class="font-normal text-sm normal-case first-letter:uppercase text-gray-700"
                     >
                       connect schedules and notes
                     </p>
@@ -84,7 +85,7 @@
                   <a href="javascript:void(0)"
                     >tasks
                     <p
-                      class="font-normal text-sm normal-case first-letter:uppercase"
+                      class="font-normal text-sm normal-case first-letter:uppercase text-gray-700"
                     >
                       bring notes and to-dos together
                     </p>
@@ -92,7 +93,7 @@
                   <a href="javascript:void(0)"
                     >web clipper
                     <p
-                      class="font-normal text-sm normal-case first-letter:uppercase"
+                      class="font-normal text-sm normal-case first-letter:uppercase text-gray-700"
                     >
                       a save button for the web
                     </p>
@@ -108,12 +109,12 @@
                   alt="arrow down"
                 />
                 <div
-                  class="hidden absolute z-10 top-full left-1/2 -translate-x-1/2 w-52 max-h-96 p-4 flex-col gap-4 group-hover:flex border shadow-md overflow-y-scroll"
+                  class="hidden absolute z-10 top-full left-1/2 -translate-x-1/2 w-60 max-h-96 p-4 flex-col gap-6 group-hover:flex border shadow-md overflow-auto bg-white"
                 >
                   <a href="javascript:void(0)"
                     >free
                     <p
-                      class="font-normal text-sm normal-case first-letter:uppercase"
+                      class="font-normal text-sm normal-case first-letter:uppercase text-gray-700"
                     >
                       capture ideas and find them quickly
                     </p>
@@ -121,7 +122,7 @@
                   <a href="javascript:void(0)"
                     >personal
                     <p
-                      class="font-normal text-sm normal-case first-letter:uppercase"
+                      class="font-normal text-sm normal-case first-letter:uppercase text-gray-700"
                     >
                       keep home and family on track
                     </p>
@@ -129,7 +130,7 @@
                   <a href="javascript:void(0)"
                     >professional
                     <p
-                      class="font-normal text-sm normal-case first-letter:uppercase"
+                      class="font-normal text-sm normal-case first-letter:uppercase text-gray-700"
                     >
                       tackle any project, at work or home
                     </p>
@@ -140,35 +141,167 @@
               <li>
                 <a
                   href="javascript:void(0)"
-                  class="uppercase font-semibold h-full flex items-center hover:text-green-600"
+                  class="uppercase font-semibold h-full flex items-center hover:text-main"
                   >for teams</a
                 >
               </li>
             </ul>
           </nav>
         </div>
+        <!-- HEADER right -->
         <div class="flex items-center gap-4">
-          <a href="javascript:void(0)" class="capitalize hover:text-green-600"
+          <a href="javascript:void(0)" class="capitalize hover:text-main"
             >help</a
           >
-          <a href="javascript:void(0)" class="capitalize hover:text-green-600"
+          <a href="javascript:void(0)" class="capitalize hover:text-main"
             >log in</a
           >
           <a
             href="javascript:void(0)"
-            class="capitalize border-2 border-green-600 text-green-600 hover:border-green-500 hover:text-green-500 rounded px-4 py-2 font-semibold"
+            class="capitalize border-2 border-main text-main hover:border-green-500 hover:text-green-500 rounded px-4 py-2 font-semibold"
             >download</a
           >
         </div>
       </div>
     </header>
     <!-- MAIN -->
-    <!-- Sign up -->
-    <!-- Overview -->
-    <!-- Details -->
-    <!-- Testimony -->
-    <!-- Feature -->
-    <!-- MAIN -->
+    <main class="pt-20">
+      <!-- Sign up -->
+      <section class="px-4 py-16">
+        <div class="max-w-screen-xl w-11/12 mx-auto text-center">
+          <h1 class="text-6xl font-semibold">
+            Tame your work, organize your life
+          </h1>
+          <p class="mt-6 text-2xl max-w-4xl mx-auto w-full text-gray-700">
+            Remember everything and tackle any project with your notes, tasks,
+            and schedule all in one place.
+          </p>
+          <button
+            class="mt-10 bg-main rounded text-white font-medium px-20 py-3"
+          >
+            Sign up for free
+          </button>
+          <p class="mt-3">
+            Already have an account?
+            <a href="javascript:void(0)" class="text-main">Log in</a>
+          </p>
+        </div>
+      </section>
+      <!-- Overview -->
+      <section class="px-4 py-16">
+        <div class="max-w-screen-xl w-11/12 mx-auto flex items-center">
+          <img
+            src="./assets/images/overview/overview.png"
+            alt="overview"
+            class="w-8/12"
+          />
+          <div class="w-4/12 pl-14 flex flex-col gap-8">
+            <div>
+              <p class="font-semibold uppercase">Work anywhere</p>
+              <p class="text-gray-700 text-sm">
+                Keep important info handy—your notes sync automatically to all
+                your devices.
+              </p>
+            </div>
+            <div>
+              <p class="font-semibold uppercase">Remember everything</p>
+              <p class="text-gray-700 text-sm">
+                Make notes more useful by adding text, images, audio, scans,
+                PDFs, and documents.
+              </p>
+            </div>
+            <div>
+              <p class="font-semibold uppercase">Turn to-do in done</p>
+              <p class="text-gray-700 text-sm">
+                Bring your notes, tasks, and schedules together to get things
+                done more easily.
+              </p>
+            </div>
+            <div>
+              <p class="font-semibold uppercase">Find things fast</p>
+              <p class="text-gray-700 text-sm">
+                Get what you need, when you need it with powerful, flexible
+                search capabilities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Details -->
+      <section class="px-4 py-16">
+        <div class="max-w-screen-xl w-11/12 mx-auto text-center">
+          <h2 class="text-5xl font-semibold">
+            Find your productivity happy place
+          </h2>
+          <p class="mt-6 text-2xl max-w-4xl mx-auto w-full text-gray-700">
+            See what’s possible with Evernote
+          </p>
+          <iframe
+            width="958"
+            height="539"
+            src="https://www.youtube.com/embed/NgkCgqIogcY"
+            title="What is Evernote?"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            class="mt-16 rounded-lg"
+          ></iframe>
+        </div>
+      </section>
+      <!-- Testimonials -->
+      <section class="px-4 py-16 bg-slate-50">
+        <div class="max-w-screen-xl w-11/12 mx-auto text-center">
+          <div class="max-w-3xl mx-auto min-h-[22rem]">
+            <img
+              src="./assets/images/testimonials/quote.svg"
+              alt="quote icon"
+              class="mx-auto"
+            />
+            <p class="text-2xl mt-10">
+              Evernote is a powerful tool that can help executives,
+              entrepreneurs and creative people capture and arrange their ideas.
+              All you have to do is use it.
+            </p>
+            <p class="mt-10 font-medium text-2xl uppercase">Forbes</p>
+          </div>
+          <div class="flex items-center h-9 justify-between">
+            <img
+              src="./assets/images/testimonials/forbes.avif"
+              alt="forbes icon"
+              class="test-logo h-full"
+            />
+            <img
+              src="./assets/images/testimonials/inc.avif"
+              alt="forbes icon"
+              class="test-logo h-full opacity-20"
+            />
+            <img
+              src="./assets/images/testimonials/the-verge.avif"
+              alt="forbes icon"
+              class="test-logo h-full opacity-20"
+            />
+            <img
+              src="./assets/images/testimonials/entrepreneur.avif"
+              alt="forbes icon"
+              class="test-logo h-full opacity-20"
+            />
+            <img
+              src="./assets/images/testimonials/business.avif"
+              alt="forbes icon"
+              class="test-logo h-full opacity-20"
+            />
+            <img
+              src="./assets/images/testimonials/well-good.avif"
+              alt="forbes icon"
+              class="test-logo h-full opacity-20"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Feature -->
+      <!-- MAIN -->
+    </main>
     <!-- FOOTER -->
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
