@@ -1,11 +1,4 @@
-const testLogo = document.querySelectorAll(".test-logo");
-const active = function () {
-  testLogo.forEach((item) => {
-    item.classList.add("opacity-20");
-  });
-  this.classList.remove("opacity-20");
-};
-
-testLogo.forEach((item) => {
-  item.onclick = active;
-});
+import playTestimonials from "./partial/testimonials.js";
+import toggleMenu from "./partial/header.js";
+toggleMenu();
+playTestimonials();
