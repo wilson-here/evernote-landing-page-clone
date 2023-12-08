@@ -1,4 +1,5 @@
+import handleMenu from "./partial/header.js";
 import playTestimonials from "./partial/testimonials.js";
-import toggleMenu from "./partial/header.js";
-toggleMenu();
+
+handleMenu();
 playTestimonials();

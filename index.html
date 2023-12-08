@@ -15,15 +15,19 @@
   </head>
   <body>
     <!-- HEADER: Navbar -->
-    <header class="shadow-md h-20 fixed z-10 bg-white w-full px-4">
+    <header class="shadow-sm h-20 fixed z-10 bg-white w-full px-5">
       <!-- HEADER pc -->
       <div
-        class="max-w-screen-xl w-11/12 mx-auto h-full hidden lg:flex justify-between"
+        class="max-w-md md:max-w-3xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto h-full hidden lg:flex justify-between"
       >
         <!-- HEADER left -->
         <div class="flex gap-8 h-full items-center">
           <a href="./" class="">
-            <img src="./assets/images/logo.svg" alt="evernote logo" />
+            <img
+              src="./assets/images/logo.svg"
+              alt="evernote logo"
+              class="w-36 xl:w-44"
+            />
           </a>
           <nav class="h-full">
             <ul class="flex gap-6 h-full">
@@ -43,7 +47,7 @@
                   alt="arrow down"
                 />
                 <div
-                  class="hidden absolute z-10 top-full left-1/2 -translate-x-1/2 w-60 max-h-96 p-4 flex-col gap-4 group-hover:flex border shadow-md overflow-auto bg-white"
+                  class="hidden absolute z-10 top-full left-1/2 -translate-x-1/2 w-60 max-h-96 p-4 flex-col gap-4 group-hover:flex border shadow-sm overflow-auto bg-white"
                 >
                   <a href="javascript:void(0)"
                     >sync & organize
@@ -112,7 +116,7 @@
                   alt="arrow down"
                 />
                 <div
-                  class="hidden absolute z-10 top-full left-1/2 -translate-x-1/2 w-60 max-h-96 p-4 flex-col gap-6 group-hover:flex border shadow-md overflow-auto bg-white"
+                  class="hidden absolute z-10 top-full left-1/2 -translate-x-1/2 w-60 max-h-96 p-4 flex-col gap-6 group-hover:flex border shadow-sm overflow-auto bg-white"
                 >
                   <a href="javascript:void(0)"
                     >free
@@ -167,24 +171,26 @@
         </div>
       </div>
       <!-- HEADER mb -->
-      <div class="h-full flex justify-between items-center">
+      <div
+        class="max-w-md md:max-w-3xl mx-auto w-full h-full flex lg:hidden justify-between items-center"
+      >
         <a href="./" class="">
           <img src="./assets/images/logo.svg" alt="evernote logo" />
         </a>
         <img
           src="./assets/images/header/hamburger.svg"
           alt="hamburger menu icon"
-          class="hamburger"
+          class="hamburger p-2 cursor-pointer"
         />
         <img
           src="./assets/images/header/close.svg"
           alt="close menu icon"
-          class="close w-6 hidden"
+          class="close w-6 p-2 hidden box-content cursor-pointer"
         />
         <div
-          class="menu hidden fixed top-20 left-0 p-4 z-10 bg-white w-full h-[calc(100vh-5rem)] overflow-auto"
+          class="menu px-5 h-0 overflow-hidden transition-[height] fixed top-20 left-0 z-10 bg-white w-full"
         >
-          <nav class="h-full">
+          <nav class="h-full max-w-md md:max-w-3xl mx-auto w-full">
             <ul class="h-full">
               <li class="w-full border-b border-b-gray-200">
                 <a
@@ -196,14 +202,16 @@
               <li class="w-full border-b border-b-gray-200">
                 <a
                   href="javascript:void(0)"
-                  class="w-full uppercase py-4 font-semibold flex justify-between items-center"
+                  class="more w-full uppercase py-4 font-semibold flex justify-between items-center"
                   >Features
                   <img
                     src="./assets/images/header/arrow-down.svg"
                     alt="arrow down icon"
                   />
                 </a>
-                <ul class="flex flex-col gap-4 pb-4">
+                <ul
+                  class="flex flex-col gap-4 max-h-0 overflow-hidden transition-[max-height]"
+                >
                   <li>
                     <a href="javascript:void(0)" class="text-gray-700"
                       >Sync & Organize</a
@@ -240,14 +248,16 @@
               <li class="w-full border-b border-b-gray-200">
                 <a
                   href="javascript:void(0)"
-                  class="w-full uppercase py-4 font-semibold flex justify-between items-center"
+                  class="more w-full uppercase py-4 font-semibold flex justify-between items-center"
                   >For individuals
                   <img
                     src="./assets/images/header/arrow-down.svg"
                     alt="arrow down icon"
                   />
                 </a>
-                <ul class="flex flex-col gap-4 pb-4">
+                <ul
+                  class="flex flex-col gap-4 max-h-0 overflow-hidden transition-[max-height]"
+                >
                   <li>
                     <a href="javascript:void(0)" class="text-gray-700">Free</a>
                   </li>
@@ -304,9 +314,11 @@
     <!-- MAIN -->
     <main class="pt-20">
       <!-- Sign up -->
-      <section class="px-4 py-10 lg:py-16">
-        <div class="max-w-screen-xl w-full lg:mx-auto text-center">
-          <h1 class="text-4xl lg:text-6xl font-semibold">
+      <section class="px-5 py-10 lg:py-16">
+        <div
+          class="max-w-md md:max-w-3xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl w-full mx-auto text-center"
+        >
+          <h1 class="text-4xl lg:text-5xl xl:text-6xl font-semibold">
             Tame your work, organize your life
           </h1>
           <p
@@ -328,42 +340,42 @@
         </div>
       </section>
       <!-- Overview -->
-      <section class="px-4 py-6 lg:py-16">
+      <section class="px-5 lg:px-8 py-6 lg:py-16">
         <div
-          class="max-w-screen-xl w-full lg:mx-auto flex flex-col lg:flex-row items-center"
+          class="max-w-md md:max-w-3xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl w-full mx-auto flex flex-col md:flex-row items-center"
         >
           <img
             src="./assets/images/overview/overview.png"
             alt="overview"
-            class="w-full lg:w-8/12"
+            class="w-full md:w-1/2 lg:w-7/12 xl:w-8/12"
           />
           <div
-            class="w-full lg:w-4/12 lg:pl-14 mt-8 lg:mt-0 flex flex-col gap-8"
+            class="w-full md:w-1/2 md:pl-20 md:pr-4 lg:w-5/12 xl:w-4/12 lg:pl-14 mt-8 lg:mt-0 flex flex-col gap-7"
           >
             <div>
-              <p class="font-semibold uppercase text-sm">Work anywhere</p>
-              <p class="text-gray-700 text-sm">
+              <p class="font-semibold uppercase text-lg">Work anywhere</p>
+              <p class="text-gray-700">
                 Keep important info handy—your notes sync automatically to all
                 your devices.
               </p>
             </div>
             <div>
-              <p class="font-semibold uppercase text-sm">Remember everything</p>
-              <p class="text-gray-700 text-sm">
+              <p class="font-semibold uppercase text-lg">Remember everything</p>
+              <p class="text-gray-700">
                 Make notes more useful by adding text, images, audio, scans,
                 PDFs, and documents.
               </p>
             </div>
             <div>
-              <p class="font-semibold uppercase text-sm">Turn to-do in done</p>
-              <p class="text-gray-700 text-sm">
+              <p class="font-semibold uppercase text-lg">Turn to-do in done</p>
+              <p class="text-gray-700">
                 Bring your notes, tasks, and schedules together to get things
                 done more easily.
               </p>
             </div>
             <div>
-              <p class="font-semibold uppercase text-sm">Find things fast</p>
-              <p class="text-gray-700 text-sm">
+              <p class="font-semibold uppercase text-lg">Find things fast</p>
+              <p class="text-gray-700">
                 Get what you need, when you need it with powerful, flexible
                 search capabilities.
               </p>
@@ -372,8 +384,10 @@
         </div>
       </section>
       <!-- Details -->
-      <section class="px-4 py-6 lg:py-16">
-        <div class="max-w-screen-xl w-full lg:mx-auto text-center">
+      <section class="px-5 lg:px-8 py-6 lg:py-16">
+        <div
+          class="max-w-md md:max-w-3xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl w-full mx-auto text-center"
+        >
           <h2 class="text-3xl lg:text-5xl font-semibold">
             Find your productivity happy place
           </h2>
@@ -393,8 +407,10 @@
         </div>
       </section>
       <!-- Testimonials -->
-      <section class="px-4 py-6 lg:py-16 bg-slate-50">
-        <div class="max-w-screen-xl w-11/12 mx-auto text-center">
+      <section class="px-5 lg:px-8 py-6 lg:py-16 bg-slate-50">
+        <div
+          class="max-w-md md:max-w-3xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto text-center"
+        >
           <img
             src="./assets/images/testimonials/quote.svg"
             alt="quote icon"
@@ -403,7 +419,7 @@
           <!-- Testimonials - quote -->
           <div class="test-quote-wrap max-w-3xl mx-auto lg:min-h-[18rem]">
             <div class="test-quote">
-              <p class="text-lg lg:text-2xl mt-10">
+              <p class="text-lg lg:text-2xl mt-6 lg:mt-10">
                 Evernote is a powerful tool that can help executives,
                 entrepreneurs and creative people capture and arrange their
                 ideas. All you have to do is use it.
@@ -415,7 +431,7 @@
               </p>
             </div>
             <div class="test-quote">
-              <p class="text-lg lg:text-2xl mt-10">
+              <p class="text-lg lg:text-2xl mt-6 lg:mt-10">
                 Evernote is a powerful tool for managing your tasks right
                 alongside all of the information you work with every day.
               </p>
@@ -426,7 +442,7 @@
               </p>
             </div>
             <div class="test-quote">
-              <p class="text-lg lg:text-2xl mt-10">
+              <p class="text-lg lg:text-2xl mt-6 lg:mt-10">
                 It feels like there are endless ways to use Evernote… Use it for
                 school, work, life, and beyond.
               </p>
@@ -437,7 +453,7 @@
               </p>
             </div>
             <div class="test-quote">
-              <p class="text-lg lg:text-2xl mt-10">
+              <p class="text-lg lg:text-2xl mt-6 lg:mt-10">
                 A few years ago, after my computer broke down and I lost all of
                 the notes I had saved to my desktop, I finally decided to
                 embrace the cloud and download Evernote. Since then, I haven’t
@@ -450,7 +466,7 @@
               </p>
             </div>
             <div class="test-quote">
-              <p class="text-lg lg:text-2xl mt-10">
+              <p class="text-lg lg:text-2xl mt-6 lg:mt-10">
                 You can even send emails to Evernote and gather all of the
                 things you need in a single place.
               </p>
@@ -461,7 +477,7 @@
               </p>
             </div>
             <div class="test-quote">
-              <p class="text-lg lg:text-2xl mt-10">
+              <p class="text-lg lg:text-2xl mt-6 lg:mt-10">
                 Consider Evernote to be your go-to hub for not just to-do lists
                 but all of your notes. The organizational possibilities are
                 expansive, and everything syncs across all of your devices that
@@ -476,7 +492,7 @@
           </div>
           <!-- Testimonials - logo -->
           <div
-            class="test-logo-wrap flex items-center h-8 justify-center lg:justify-between mt-16 lg:mt-0"
+            class="test-logo-wrap flex items-center h-9 lg:h-8 xl:h-9 2xl:h-10 justify-center lg:gap-8 xl:gap-12 mt-16 lg:mt-0"
           >
             <img
               src="./assets/images/testimonials/forbes.avif"
@@ -512,11 +528,13 @@
         </div>
       </section>
       <!-- Feature -->
-      <section class="px-4 py-6 lg:py-16">
-        <div class="max-w-screen-xl w-full lg:mx-auto flex flex-col gap-16">
+      <section class="px-5 lg:px-8 py-6 lg:py-16">
+        <div
+          class="max-w-md md:max-w-3xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl w-full mx-auto flex flex-col gap-16"
+        >
           <!-- Feature 1 -->
           <div class="flex flex-col lg:flex-row justify-between items-center">
-            <div class="w-full lg:w-1/2">
+            <div class="w-full lg:w-5/12 xl:w-1/2">
               <img
                 src="./assets/images/feature/deadline.svg"
                 alt="deadline icon"
@@ -530,21 +548,21 @@
               </p>
               <a
                 href="javascript:void(0)"
-                class="uppercase inline-block mt-5 text-main font-bold"
+                class="uppercase inline-block mt-5 text-lg text-main font-bold"
                 >Learn more →</a
               >
             </div>
             <img
               src="./assets/images/feature/deadline.avif"
               alt="deadline"
-              class="w-full mt-10 lg:mt-0 lg:w-1/2 lg:px-16"
+              class="w-full mt-10 lg:mt-0 lg:w-7/12 xl:w-1/2 lg:pl-10 xl:pl-10 xl:pr-0"
             />
           </div>
           <!-- Feature 2 -->
           <div
             class="flex flex-col lg:flex-row-reverse justify-between items-center"
           >
-            <div class="w-full lg:w-1/2">
+            <div class="w-full lg:w-5/12 xl:w-1/2">
               <img
                 src="./assets/images/feature/paperless.svg"
                 alt="paperless icon"
@@ -558,19 +576,19 @@
               </p>
               <a
                 href="javascript:void(0)"
-                class="uppercase inline-block mt-5 text-main font-bold"
+                class="uppercase inline-block mt-5 text-lg text-main font-bold"
                 >Learn more →</a
               >
             </div>
             <img
               src="./assets/images/feature/paperless.avif"
               alt="paperless"
-              class="w-full mt-10 lg:mt-0 lg:w-1/2 lg:px-16"
+              class="w-full mt-10 lg:mt-0 lg:w-7/12 xl:w-1/2 lg:pl-10 xl:pr-10 xl:pl-0"
             />
           </div>
           <!-- Feature 3 -->
           <div class="flex flex-col lg:flex-row justify-between items-center">
-            <div class="w-full lg:w-1/2">
+            <div class="w-full lg:w-5/12 xl:w-1/2">
               <img src="./assets/images/feature/clip.svg" alt="clip icon" />
               <h2 class="text-3xl lg:text-4xl font-semibold mt-5">
                 Clip the web
@@ -581,21 +599,21 @@
               </p>
               <a
                 href="javascript:void(0)"
-                class="uppercase inline-block mt-5 text-main font-bold"
+                class="uppercase inline-block mt-5 text-lg text-main font-bold"
                 >Learn more →</a
               >
             </div>
             <img
               src="./assets/images/feature/clip.avif"
               alt="clip"
-              class="w-full mt-10 lg:mt-0 lg:w-1/2 lg:px-16"
+              class="w-full mt-10 lg:mt-0 lg:w-7/12 xl:w-1/2 lg:pl-10 xl:pl-10 xl:pr-0"
             />
           </div>
           <!-- Feature 4 -->
           <div
             class="flex flex-col lg:flex-row-reverse justify-between items-center"
           >
-            <div class="w-full lg:w-1/2">
+            <div class="w-full lg:w-5/12 xl:w-1/2">
               <img
                 src="./assets/images/feature/calendar.svg"
                 alt="calendar icon"
@@ -609,14 +627,14 @@
               </p>
               <a
                 href="javascript:void(0)"
-                class="uppercase inline-block mt-5 text-main font-bold"
+                class="uppercase inline-block mt-5 text-lg text-main font-bold"
                 >Learn more →</a
               >
             </div>
             <img
               src="./assets/images/feature/calendar.avif"
               alt="calendar"
-              class="w-full mt-10 lg:mt-0 lg:w-1/2 lg:px-16"
+              class="w-full mt-10 lg:mt-0 lg:w-7/12 xl:w-1/2 lg:pl-10 xl:pr-10 xl:pl-0"
             />
           </div>
         </div>
@@ -624,156 +642,234 @@
       <!-- MAIN -->
     </main>
     <!-- FOOTER -->
-    <footer class="px-4 pt-6 lg:pt-16 pb-10 lg:pb-8">
-      <div class="max-w-screen-xl w-full lg:mx-auto">
+    <footer class="px-5 lg:px-8 pt-6 lg:pt-16 pb-10 lg:pb-8">
+      <div
+        class="max-w-md md:max-w-3xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl w-full mx-auto"
+      >
         <img src="./assets/images/logo.svg" alt="evernote logo" />
         <hr class="h-1 bg-black mt-12" />
-        <ul class="flex flex-col lg:flex-row justify-between gap-4">
+        <ul class="flex flex-col lg:flex-row justify-between gap-0 lg:gap-4">
           <!-- FOOTER - product -->
           <div>
-            <p class="uppercase text-xs font-semibold mt-6 lg:mt-10">product</p>
+            <p class="uppercase text-xs lg:text-sm font-semibold mt-10">
+              product
+            </p>
             <ul class="flex flex-col gap-6 lg:gap-7 mt-7">
-              <a href="javascript:void(0)" class="text-gray-700 text-xs"
+              <a
+                href="javascript:void(0)"
+                class="text-gray-700 text-xs lg:text-sm"
                 >Why Evernote</a
               >
-              <a href="javascript:void(0)" class="text-gray-700 text-xs"
+              <a
+                href="javascript:void(0)"
+                class="text-gray-700 text-xs lg:text-sm"
                 >Evernote Free</a
               >
-              <a href="javascript:void(0)" class="text-gray-700 text-xs"
+              <a
+                href="javascript:void(0)"
+                class="text-gray-700 text-xs lg:text-sm"
                 >Evernote Personal</a
               >
-              <a href="javascript:void(0)" class="text-gray-700 text-xs"
+              <a
+                href="javascript:void(0)"
+                class="text-gray-700 text-xs lg:text-sm"
                 >Evernote Professional</a
               >
-              <a href="javascript:void(0)" class="text-gray-700 text-xs"
+              <a
+                href="javascript:void(0)"
+                class="text-gray-700 text-xs lg:text-sm"
                 >Evernote Teams</a
               >
-              <a href="javascript:void(0)" class="text-gray-700 text-xs"
+              <a
+                href="javascript:void(0)"
+                class="text-gray-700 text-xs lg:text-sm"
                 >Compare Plans</a
               >
-              <a href="javascript:void(0)" class="text-gray-700 text-xs"
-                >Compare Plans</a
-              >
-              <a href="javascript:void(0)" class="text-gray-700 text-xs"
+              <a
+                href="javascript:void(0)"
+                class="text-gray-700 text-xs lg:text-sm"
                 >Student Discount</a
               >
-              <a href="javascript:void(0)" class="text-gray-700 text-xs"
+              <a
+                href="javascript:void(0)"
+                class="text-gray-700 text-xs lg:text-sm"
                 >Download App</a
               >
             </ul>
           </div>
           <!-- FOOTER - features -->
           <div>
-            <p class="uppercase text-xs font-semibold mt-6 lg:mt-10">
+            <p class="uppercase text-xs lg:text-sm font-semibold mt-10">
               features
             </p>
             <ul class="flex flex-col gap-6 lg:gap-7 mt-7">
-              <a href="javascript:void(0)" class="text-gray-700 text-xs"
+              <a
+                href="javascript:void(0)"
+                class="text-gray-700 text-xs lg:text-sm"
                 >Web Clipper</a
               >
-              <a href="javascript:void(0)" class="text-gray-700 text-xs"
+              <a
+                href="javascript:void(0)"
+                class="text-gray-700 text-xs lg:text-sm"
                 >Spaces</a
               >
-              <a href="javascript:void(0)" class="text-gray-700 text-xs"
+              <a
+                href="javascript:void(0)"
+                class="text-gray-700 text-xs lg:text-sm"
                 >Integrations</a
               >
-              <a href="javascript:void(0)" class="text-gray-700 text-xs"
+              <a
+                href="javascript:void(0)"
+                class="text-gray-700 text-xs lg:text-sm"
                 >Notes Sync</a
               >
-              <a href="javascript:void(0)" class="text-gray-700 text-xs"
+              <a
+                href="javascript:void(0)"
+                class="text-gray-700 text-xs lg:text-sm"
                 >PDF & Doc Search</a
               >
-              <a href="javascript:void(0)" class="text-gray-700 text-xs"
+              <a
+                href="javascript:void(0)"
+                class="text-gray-700 text-xs lg:text-sm"
                 >Search Handwriting</a
               >
-              <a href="javascript:void(0)" class="text-gray-700 text-xs"
+              <a
+                href="javascript:void(0)"
+                class="text-gray-700 text-xs lg:text-sm"
                 >Document Scanner</a
               >
-              <a href="javascript:void(0)" class="text-gray-700 text-xs"
+              <a
+                href="javascript:void(0)"
+                class="text-gray-700 text-xs lg:text-sm"
                 >Tasks</a
               >
-              <a href="javascript:void(0)" class="text-gray-700 text-xs"
+              <a
+                href="javascript:void(0)"
+                class="text-gray-700 text-xs lg:text-sm"
                 >Calendar</a
               >
-              <a href="javascript:void(0)" class="text-gray-700 text-xs"
+              <a
+                href="javascript:void(0)"
+                class="text-gray-700 text-xs lg:text-sm"
                 >Home</a
               >
-              <a href="javascript:void(0)" class="text-gray-700 text-xs"
+              <a
+                href="javascript:void(0)"
+                class="text-gray-700 text-xs lg:text-sm"
                 >Search</a
               >
             </ul>
           </div>
           <!-- FOOTER - resources -->
           <div>
-            <p class="uppercase text-xs font-semibold mt-6 lg:mt-10">
+            <p class="uppercase text-xs lg:text-sm font-semibold mt-10">
               resources
             </p>
             <ul class="flex flex-col gap-6 lg:gap-7 mt-7">
-              <a href="javascript:void(0)" class="text-gray-700 text-xs"
+              <a
+                href="javascript:void(0)"
+                class="text-gray-700 text-xs lg:text-sm"
                 >Resources</a
               >
-              <a href="javascript:void(0)" class="text-gray-700 text-xs">
+              <a
+                href="javascript:void(0)"
+                class="text-gray-700 text-xs lg:text-sm"
+              >
                 Templates</a
               >
-              <a href="javascript:void(0)" class="text-gray-700 text-xs">
+              <a
+                href="javascript:void(0)"
+                class="text-gray-700 text-xs lg:text-sm"
+              >
                 Make Connections</a
               >
-              <a href="javascript:void(0)" class="text-gray-700 text-xs">
+              <a
+                href="javascript:void(0)"
+                class="text-gray-700 text-xs lg:text-sm"
+              >
                 Become an Expert</a
               >
-              <a href="javascript:void(0)" class="text-gray-700 text-xs">
+              <a
+                href="javascript:void(0)"
+                class="text-gray-700 text-xs lg:text-sm"
+              >
                 Find an Expert</a
               >
-              <a href="javascript:void(0)" class="text-gray-700 text-xs">
+              <a
+                href="javascript:void(0)"
+                class="text-gray-700 text-xs lg:text-sm"
+              >
                 Early Access</a
               >
-              <a href="javascript:void(0)" class="text-gray-700 text-xs">
+              <a
+                href="javascript:void(0)"
+                class="text-gray-700 text-xs lg:text-sm"
+              >
                 Developers</a
               >
-              <a href="javascript:void(0)" class="text-gray-700 text-xs">
+              <a
+                href="javascript:void(0)"
+                class="text-gray-700 text-xs lg:text-sm"
+              >
                 Blog</a
               >
             </ul>
           </div>
           <!-- FOOTER - support -->
           <div>
-            <p class="uppercase text-xs font-semibold mt-6 lg:mt-10">support</p>
+            <p class="uppercase text-xs lg:text-sm font-semibold mt-10">
+              support
+            </p>
             <ul class="flex flex-col gap-6 lg:gap-7 mt-7">
-              <a href="javascript:void(0)" class="text-gray-700 text-xs"
+              <a
+                href="javascript:void(0)"
+                class="text-gray-700 text-xs lg:text-sm"
                 >Help & Learning</a
               >
-              <a href="javascript:void(0)" class="text-gray-700 text-xs"
+              <a
+                href="javascript:void(0)"
+                class="text-gray-700 text-xs lg:text-sm"
                 >Troubleshooting</a
               >
-              <a href="javascript:void(0)" class="text-gray-700 text-xs"
+              <a
+                href="javascript:void(0)"
+                class="text-gray-700 text-xs lg:text-sm"
                 >Forum</a
               >
             </ul>
           </div>
           <!-- FOOTER - company -->
           <div>
-            <p class="uppercase text-xs font-semibold mt-6 lg:mt-10">company</p>
+            <p class="uppercase text-xs lg:text-sm font-semibold mt-10">
+              company
+            </p>
             <ul class="flex flex-col gap-6 lg:gap-7 mt-7">
-              <a href="javascript:void(0)" class="text-gray-700 text-xs"
+              <a
+                href="javascript:void(0)"
+                class="text-gray-700 text-xs lg:text-sm"
                 >About Us (Bending Spoons)</a
               >
-              <a href="javascript:void(0)" class="text-gray-700 text-xs"
+              <a
+                href="javascript:void(0)"
+                class="text-gray-700 text-xs lg:text-sm"
                 >Careers</a
               >
-              <a href="javascript:void(0)" class="text-gray-700 text-xs"
+              <a
+                href="javascript:void(0)"
+                class="text-gray-700 text-xs lg:text-sm"
                 >Contact Us</a
               >
             </ul>
           </div>
         </ul>
         <div
-          class="flex flex-col gap-6 lg:gap-0 lg:flex-row justify-between mt-16 lg:mt-32"
+          class="flex flex-col gap-6 lg:gap-0 lg:flex-row justify-between mt-20 lg:mt-32"
         >
           <div>
             <label for="language" name="language" class="font-semibold text-xs"
               >Choose a language:</label
             >
-            <select id="language" class="text-xs p-2 bg-white">
+            <select id="language" class="text-xs py-2 bg-white cursor-pointer">
               <option value="english" selected>English</option>
               <option value="vietnamese">Vietnamese</option>
               <option value="日本語">日本語</option>
@@ -803,7 +899,7 @@
         </div>
         <hr class="mt-10 lg:mt-8 border-t-1.5 border-t-gray-400" />
         <div
-          class="flex flex-col-reverse gap-8 lg:gap-0 lg:flex-row mt-10 lg:mt-8 justify-between text-gray-400"
+          class="flex flex-col-reverse gap-8 lg:gap-0 md:flex-row mt-10 lg:mt-8 justify-between text-gray-400"
         >
           <p class="text-xs">
             © 2023 Evernote Corporation. All rights reserved.
@@ -816,6 +912,7 @@
         </div>
       </div>
     </footer>
-    <script type="module" src="./assets/js/script.js"></script>
+
+    <script src="./assets/js/script.js" type="module"></script>
   </body>
 </html>
